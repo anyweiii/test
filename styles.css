@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.animate-charcter, .navbar-brand, .nav-link, .bg-box, .name, .text, #landing > div > h1, h2, .download, .hire, .prof_title, .work_exp > h1, .intern_exp > h1, .educ_title, .zuitt_bc > h1 h5, #tools > h3, .cont_h, .cont_h2, .cont_h3, .my_works, .zuitt_bc > h1, .ue_bg > h1 {
+  text-transform: uppercase;
+}
+
+/* Navbar Design */
+.banner-wrapper {
+  position: relative;
+  width: 100%;
+  background-size: 100% 100%;
+  height: 100vh;
+  background-image: url(./images/landing/bg-landing.png);
+  background-repeat: no-repeat;
+}
+
+#info > nav > div {
+  padding-left: 3.40rem;
+}
+
+.navbar {
+  background: linear-gradient(rgba(3, 3, 3, 0.473),rgba(0, 0, 0, 0.493));
+  padding: 0.75rem; 
+  animation: slideIn 0.5s ease-in;
+}
+
+/* Animation: Navbar Start */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+/* Animation: Navbar End */
+
+.navbar-brand, .nav-link {
+  font-family: 'Kanit', sans-serif;
+  border-right: 3px solid white;
+  padding-right: 2.5rem !important;
+  letter-spacing: 4px;
+}
+
+li:last-child > a {
+  border-right: none !important;
+}
+
+.navbar-brand {
+  font-weight: 700px;
+}
+
+.nav-link, .navbar-brand:hover {
+  color: white;
+}
+
+.navbar-brand, .nav-link:hover {
+  color: red;
+}
+
+.nav-link {
+  padding-left: 2.5rem !important;
+  font-weight: 600px;
+}
+
+.navbar-toggler {
+  background: white;
+  border: none;
+}
+
+.navbar-toggler:hover {
+  background: rgba(255, 0, 0, 0.76);
+}
+
+/* Navbar Responsiveness Start */
+  @media screen and (max-width:991px) {
+    .nav-link, .navbar-brand{
+      border-right: 0px;
+      padding: 0rem !important;
+    }
+    .nav-link:hover {
+      color: rgba(255, 0, 0, 0.76);
+    }
+    #info > nav > div {
+      padding-left: 1rem;
+    }
+  }
+  @media screen and (max-width:398px) {
+    .nav-link, .navbar-brand{
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width:348px) {
+    .nav-link, .navbar-brand{
+      font-size: 14px;
+    }
+  }
+/* Navbar Responsiveness End */
+/* Navbar Design End */
+
+/* Info Page / Banner Design Start */
+.banner {
+  width: 100%;
+  text-align: center;
+  padding-top: 9rem;
+}
+
+.bg-box {
+  background: linear-gradient(rgba(73, 70, 70, 0.452),rgba(44, 41, 41, 0.363));
+  display: inline-block;
+  letter-spacing: 4px;
+  color: white;
+  margin-top: 3rem;
+}
+
+/* Banner Box Responsiveness Start */
+  @media screen and (max-width:446px) {
+    .bg-box {
+      text-align: center;
+      margin-top: 23%;
+    }
+    .name {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+      padding-bottom: 0rem !important;
+      font-size: 45px !important;
+    }
+    .dash {
+      margin: 0;
+      height: 10px;
+    }
+    .typewriter {
+      margin-top: 0rem !important;
+    }
+  }
+  @media screen and (max-width:398px) {
+    .bg-box {
+      margin-top: 20%;
+      text-align: center;
+    }
+    .name {
+      padding: 0.5rem !important;
+      height: 75px;
+      font-size: 40px !important;
+    }
+    .dash {
+      margin: 0;
+      height: 10px;
+    }
+    .typewriter {
+      margin-top: 0rem !important;
+    }
+  }
+  @media screen and (max-width:348px) {
+    .bg-box {
+      margin-top: 20%;
+      text-align: center;
+    }
+    .name {
+      padding: 0.5rem !important;
+      font-size: 35px !important;
+      height: auto;
+    }
+    .dash {
+      margin: 0;
+      height: 10px;
+    }
+    .typewriter {
+      margin-top: 0rem !important;
+      font-size: 14px;
+    }
+  }
+/* Banner Box Responsiveness End */
+
+.name, .title {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.name {
+  font-family: 'Titan One', sans-serif;
+  font-size: 50px;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Animation: Banner Title Start */
+.typewriter {
+  color: #ff0000;
+  font-family: 'Mitr', sans-serif;
+  overflow: hidden; 
+  border-right: .15em solid rgb(255, 0, 0); 
+  padding-bottom: 1rem;
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+  typing 3.5s steps(30, end),
+  blink-caret .5s step-end infinite;
+}
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 90% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: transparent }
+  }
+/* Animation: Banner Title End */
+
+.dash {
+  border-top: 3px solid #7e7b7b;
+  width: 50%;
+}
+
+.text {
+  font-family: 'Rubik Lines', sans-serif;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  padding-top: 2rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+
+/* Info Text Responsiveness Start */
+  @media screen and (max-width:1024px) {
+    .text {
+      text-align: center;
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  }
+/* Info Text Responsiveness End */
+
+
+.text > span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+/* Animation: Info Text Start */
+.text > span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.text > span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.text > span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.text > span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.text > span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.text > span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.text > span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.text > span:nth-child(8) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.text > span:nth-child(9) {
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.text > span:nth-child(10) {
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.text > span:nth-child(11) {
+  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.text > span:nth-child(12) {
+  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.text > span:nth-child(13) {
+  animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+/* Animation: Info Text End */
+
+/* Social Media Logo Design Start */
+.soc_logo {
+  z-index: 1;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 22%;
+  left: calc(100% - 4rem);
+  padding-bottom: 2rem;
+}
+
+.soc_logo li:hover {
+  transform: scale(1.1);
+}
+
+.soc_logo > li {
+  padding-top: 2.5rem;
+}
+
+/* @media (max-width: 800px) {
+  .soc_logo {
+    position: static;
+    align-items: center;
+    justify-content: center;
+    transform: none;
+    flex-direction: row;
+  }
+
+  .soc_logo > li {
+    padding-top: 2rem;
+    padding-right: 1rem; 
+    width: 3rem;
+  }
+} */
+
+.soc_logo img {
+  width: 35px;
+  opacity: 0; 
+  transform: scale(0.5); 
+  animation: popOut 1s ease-out forwards; 
+}
+
+@keyframes popOut {
+  from {
+      opacity: 0;
+      transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Social Media Logo Design End */
+
+.scroll_down {
+  width: 40px; 
+  height: 40px; 
+  position: absolute;
+  bottom: 20px;
+  left: 96%;
+  transform: translateX(-50%) scale(1);
+  border: 2px solid #ffffff; 
+  border-radius: 50%; 
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+/* @media (max-width: 768px) {
+  .scroll_down {
+    width: 2rem;
+    height: 2rem;
+    bottom: 20px;
+    left: 96%;
+    right: 0rem;
+    top: 94%;
+  }
+}
+
+@media (max-width: 575px) {
+  .scroll_down {
+    width: 2rem;
+    height: 2rem;
+    bottom: 20px;
+    left: 93%;
+    right: 0rem;
+    top: 94%;
+  }
+} */
+
+.scroll_down:hover {
+  transform: translateX(-50%) scale(1.2);
+  animation: pulse 1s infinite;
+  background-color: #ffffff; 
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: translateX(-50%) scale(1.2);
+  }
+  50% {
+    transform: translateX(-50%) scale(1);
+  }
+}
