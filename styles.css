@@ -121,7 +121,7 @@ li:last-child > a {
   @media screen and (max-width:446px) {
     .bg-box {
       text-align: center;
-      margin-top: 23%;
+      margin-top: 20%;
     }
     .name {
       padding-left: 1rem !important;
@@ -161,7 +161,7 @@ li:last-child > a {
       text-align: center;
     }
     .name {
-      padding: 0.5rem !important;
+      padding-left: 0.5rem;
       font-size: 35px !important;
       height: auto;
     }
@@ -171,7 +171,8 @@ li:last-child > a {
     }
     .typewriter {
       margin-top: 0rem !important;
-      font-size: 14px;
+      font-size: 15px;
+      padding-left: 0.5rem;
     }
   }
 /* Banner Box Responsiveness End */
@@ -235,6 +236,48 @@ li:last-child > a {
       text-align: center;
       padding-left: 4rem;
       padding-right: 4rem;
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    .text {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-top: 1rem;
+    }
+  }
+
+  @media screen and (max-width:688px) {
+    .text {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      padding-top: 1rem;
+    }
+  }
+
+  @media screen and (max-width:564px) {
+    .text {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1rem;
+      font-size: 28px;
+    }
+  }
+  @media screen and (max-width:425px) {
+    .text {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1rem;
+      font-size: 22px;
+    }
+  }
+
+  @media screen and (max-width:320px) {
+    .text {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1rem;
+      font-size: 18px;
     }
   }
 /* Info Text Responsiveness End */
@@ -329,21 +372,24 @@ li:last-child > a {
   padding-top: 2.5rem;
 }
 
-/* @media (max-width: 800px) {
+/* Social Logo Position Responsiveness Start */
+@media (max-width: 800px) {
   .soc_logo {
-    position: static;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: static;
     transform: none;
-    flex-direction: row;
   }
-
   .soc_logo > li {
-    padding-top: 2rem;
-    padding-right: 1rem; 
-    width: 3rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
   }
-} */
+  .soc_logo > li > a > img {
+    width: 80%;
+  }
+}
+/* Social Logo Responsiveness End */
 
 .soc_logo img {
   width: 35px;
@@ -352,6 +398,7 @@ li:last-child > a {
   animation: popOut 1s ease-out forwards; 
 }
 
+/* Animation - Logo Start */
 @keyframes popOut {
   from {
       opacity: 0;
@@ -362,9 +409,10 @@ li:last-child > a {
     transform: scale(1);
   }
 }
-
+/* Animation - Logo End */
 /* Social Media Logo Design End */
 
+/* Scroll Button Design Start */
 .scroll_down {
   width: 40px; 
   height: 40px; 
@@ -377,28 +425,27 @@ li:last-child > a {
   cursor: pointer;
   transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
-
-/* @media (max-width: 768px) {
+/* Scroll Button Responsiveness Start */
+@media (max-width: 768px) {
   .scroll_down {
-    width: 2rem;
-    height: 2rem;
-    bottom: 20px;
-    left: 96%;
-    right: 0rem;
-    top: 94%;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    right: 40px;
+    transform: translate(-90%,-10%);
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 375px) {
   .scroll_down {
-    width: 2rem;
-    height: 2rem;
-    bottom: 20px;
-    left: 93%;
-    right: 0rem;
-    top: 94%;
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    
   }
-} */
+}
+
+/* Scroll Button Responsiveness End */
 
 .scroll_down:hover {
   transform: translateX(-50%) scale(1.2);
@@ -406,6 +453,7 @@ li:last-child > a {
   background-color: #ffffff; 
 }
 
+/* Animation - Scroll Button Start */
 @keyframes pulse {
   0%, 100% {
     transform: translateX(-50%) scale(1.2);
@@ -414,3 +462,5 @@ li:last-child > a {
     transform: translateX(-50%) scale(1);
   }
 }
+/* Animation - Scroll Button End */
+/* Scroll Button Design End */
