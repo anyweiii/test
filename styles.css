@@ -678,7 +678,7 @@ background-color: #ffffff;
 
 @media (max-width: 320px) {
   .l_contents > p {
-    padding-right: 1rem !important;
+    padding-right: 0.75rem !important;
     font-size: 14px !important;
   }
 }
@@ -1440,10 +1440,20 @@ footer {
   footer {
     font-size: 0.5rem;
     text-align: center;
-    transform: none;
     padding-top: 0rem !important;
     overflow: hidden;
   }
 }
+
+@media screen and (max-width:320px) {
+  footer > div  {
+     font-size: 8px;
+  }
+  footer {
+    padding-top: 2rem !important;
+    transform: translate(1rem, 12rem) !important;
+  }
+}
+
 /* footer end */
 /* Contact Me End */
