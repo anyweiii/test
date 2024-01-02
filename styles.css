@@ -581,11 +581,17 @@ background-color: #ffffff;
 /* Landing Page Design Start */
 #landing {
   position: relative;
-  min-height: 100vh;
+  min-height: 120vh;
   width: 100%;
   background: url(./images/aboutme/bg_aboutme.png);
   background-repeat: no-repeat;
   background-size: cover; 
+}
+
+@media (max-width: 320px) {
+  #landing {
+  min-height: 100vh;
+  }
 }
 
 .landing_wrap {
@@ -674,7 +680,7 @@ background-color: #ffffff;
   }
   
   .l_contents > p {
-    font-size: 12px;
+    font-size: 14px;
     padding: 0rem !important;
     letter-spacing: 3px;
   }
@@ -685,6 +691,44 @@ background-color: #ffffff;
     width: 100%;
     transform: translate(6%,22%);
     padding: 0rem;
+  }
+  .l_contents > h1, .l_contents > h2 {
+    font-size: 16px;
+    letter-spacing: 4px;
+  }
+  
+  .l_contents > p {
+    font-size: 14px;
+    padding: 0rem !important;
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 575px) {
+  .l_contents {
+    width: 90%;
+    transform: translate(6%,7%);
+    margin: 0rem !important;
+  }
+  .l_contents > h1, .l_contents > h2 {
+    font-size: 16px;
+    letter-spacing: 4px;
+  }
+  
+  .l_contents > p {
+    font-size: 14px;
+    padding: 0rem !important;
+    letter-spacing: 3px;
+    margin: 0.5rem !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .l_contents {
+    height: 110px;
+    width: 90%;
+    transform: translate(6%,20%);
+    margin: 0rem !important;
   }
   .l_contents > h1, .l_contents > h2 {
     font-size: 14px;
@@ -698,49 +742,13 @@ background-color: #ffffff;
   }
 }
 
-@media (max-width: 575px) {
-  .l_contents {
-    width: 90%;
-    transform: translate(6%,37%);
-    margin: 0rem !important;
-  }
-  .l_contents > h1, .l_contents > h2 {
-    font-size: 12px;
-    letter-spacing: 4px;
-  }
-  
-  .l_contents > p {
-    font-size: 10px;
-    padding: 0rem !important;
-    letter-spacing: 3px;
-  }
-}
-
-@media (max-width: 425px) {
-  .l_contents {
-    width: 90%;
-    transform: translate(6%,20%);
-    margin: 0rem !important;
-  }
-  .l_contents > h1, .l_contents > h2 {
-    font-size: 12px;
-    letter-spacing: 4px;
-  }
-  
-  .l_contents > p {
-    font-size: 10px;
-    padding: 0rem !important;
-    letter-spacing: 3px;
-  }
-}
-
 @media (max-width: 375px) {
   .l_contents > h1, .l_contents > h2 {
-    font-size: 10px;
+    font-size: 14px;
   }
   
   .l_contents > p {
-    font-size: 8px;
+    font-size: 12px
   }
 }
 
@@ -750,12 +758,29 @@ background-color: #ffffff;
     transform: translate(6%,20%);
   }
   .l_contents > h1, .l_contents > h2 {
-    font-size: 10px;
+    font-size: 14px;
     letter-spacing: 2px;
   }
   
   .l_contents > p {
-    font-size: 8px;
+    font-size: 12px;
+    padding: 0rem !important;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 296px) {
+  .l_contents {
+    width: 90%;
+    transform: translate(6%,20%);
+  }
+  .l_contents > h1, .l_contents > h2 {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  
+  .l_contents > p {
+    font-size: 14px;
     padding: 0rem !important;
     letter-spacing: 1px;
   }
@@ -896,28 +921,40 @@ background-color: #ffffff;
 @media (max-width: 575px) {
   .landing_img {
     transform: translateY(4rem);
-    width: 45%;
+    width: 55%;
   }
   .h_content {
-    transform: translate(12rem, -16rem) !important;
+    transform: translate(11.5rem, -17rem) !important;
+  }
+}
+
+@media (max-width: 296px) {
+  .landing_img {
+    width: 70%;
   }
 }
 
 @media (max-width: 425px) {
   .h_content {
-    transform: translate(8rem, -15rem) !important;
+    transform: translate(7.5rem, -15rem) !important;
   }
 }
 
 @media (max-width: 375px) {
   .h_content {
-    transform: translate(6.8rem, -13rem) !important;
+    transform: translate(6rem, -13rem) !important;
   }
 }
 
 @media (max-width: 320px) {
   .h_content {
-    transform: translate(5.67rem, -11rem) !important;
+    transform: translate(5rem, -13rem) !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .h_content {
+    transform: translate(5rem, -13rem) !important;
   }
 }
 
@@ -952,7 +989,7 @@ background-color: #ffffff;
 
 @media (max-width: 425px) {
   .me_img {
-    width: 100%;
+    width: 90%;
     padding: 1rem;
   }
 }
@@ -961,6 +998,12 @@ background-color: #ffffff;
   .me_img {
     width: 100%;
     padding: 0rem;
+  }
+}
+
+@media (max-width: 296px) {
+  .me_img {
+    width: 100%;
   }
 }
 /* Responsiveness: Image End */
