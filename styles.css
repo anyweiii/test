@@ -787,6 +787,12 @@ li:last-child > a {
   .landing-download, .landing-hire {
     font-size: 16px;
   }
+  .landing-download {
+    margin-right: 3rem;
+  }
+  .landing-hire {
+    margin-right: 0rem;
+  }
 }
 
 @media screen and (max-width: 375px) {
