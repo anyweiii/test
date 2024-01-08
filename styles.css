@@ -348,13 +348,13 @@ li:last-child > a {
   }
 
   .deconstructed {
-    font-size: 12vw;
+    font-size: 12vw !important;
   }
 }
 
 @media screen and (max-width:319px) {
   .deconstructed {
-    font-size: 25px;
+    font-size: 10vw !important;
   }
 }
 /* END: Banner box responsiveness */
