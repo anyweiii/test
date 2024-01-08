@@ -352,7 +352,7 @@ li:last-child > a {
   }
 }
 
-@media screen and (max-width:319px) {
+@media screen and (max-width:449px) {
   .deconstructed {
     font-size: 10vw !important;
   }
