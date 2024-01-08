@@ -351,6 +351,12 @@ li:last-child > a {
     font-size: 12vw;
   }
 }
+
+@media screen and (max-width:319px) {
+  .deconstructed {
+    font-size: 35px;
+  }
+}
 /* END: Banner box responsiveness */
 
 .tagline-header {
