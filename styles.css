@@ -354,7 +354,7 @@ li:last-child > a {
 
 @media screen and (max-width:319px) {
   .deconstructed {
-    font-size: 32px;
+    font-size: 25px;
   }
 }
 /* END: Banner box responsiveness */
@@ -585,8 +585,6 @@ li:last-child > a {
     padding: 0;
   }
 }
-
-
 
 .landing-body > h1, .landing-img > h1 {
   position: relative;
