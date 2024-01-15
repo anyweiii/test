@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.navbar-brand, .nav-link, .deconstructed, .contents > p, .landing-body > h1, .landing-img > h1, .animation, .landing-buttons {
+.navbar-brand, .nav-link, .deconstructed, .contents > p, .landing-body > h1, .landing-img > h1, .animation, .landing-buttons, .prof_title, #projects h1 {
   text-transform: uppercase;
 }
 
@@ -526,12 +526,6 @@ li:last-child > a {
   overflow: hidden;
 }
 
-/* @media screen and (max-width: 1024px) {
-  #landing {
-    height: 800px !important;
-  }
-} */
-
 .landing-img {
   margin-top: 140px;
   padding-right: 50px;
@@ -874,6 +868,288 @@ li:last-child > a {
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
 }
-
-
 /* END: Landing Design */
+
+/* START: Projects / Exp Start */
+#projects {
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(192, 192, 192, 0.158)), 
+	url("./images/projects/projects-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+#projects ul {
+  list-style-type: none;
+}
+
+#projects span {
+  font-family: 'Arimo', sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 13px !important;
+  font-weight: 500;
+}
+
+.prof_title, .educ_title, .my_works {
+  width: fit-content;
+  background: linear-gradient(rgba(0, 0, 0, 0.61),rgba(99, 88, 88, 0.315));
+  padding: 0.75rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  text-align: center;
+}
+
+.prof_title, .work_exp, .zuitt_bc, .educ_title, .my_works {
+  color: white;
+  font-size: 28px;
+}
+
+.work_bg h1, .intern_exp h1, .zuitt_bc h1, .ue_bg h1 {
+  font-size: 26px;
+  font-family: 'Kanit', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.work_exp h1, .intern_exp h1, .zuitt_bc h5, .ue_bg h5 {
+  letter-spacing: 1px;
+}
+
+.ue_bg h5, .zuitt_bc h5 {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.intern_exp, .ue_bg {
+  color: black;
+}
+
+.work_exp img, .zuitt_bc img, .intern_exp img, .ue_bg img {
+  width: 24px;
+  padding-bottom: 0.2rem;
+}
+
+.work_bg, .intern_bg, .bc_exp, .educ_bg {
+  width: 50%;
+  height: auto;
+}
+
+.work_bg, .bc_exp {
+  padding-top: 1.5rem;
+}
+
+.work_exp, .zuitt_bc {
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  font-size: 13.5px;
+  text-align: justify;
+  background: rgba(0, 0, 0, 0.719);
+}
+
+.intern_bg, .educ_bg {
+  float: right;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  text-align: justify;
+  background: rgba(255, 255, 255, 0.295);
+  font-size: 13.5px;
+}
+
+@media screen and (max-width:425px) {
+  #projects span  {
+    letter-spacing: 0px;
+  }
+
+  .work_bg h1, .intern_exp h1, .zuitt_bc h1, .ue_bg h1  {
+    font-size: 20px;
+  }
+
+  .zuitt_bc span, .ue_bg span .intern_exp span, .ue_bg span {
+    padding-left: 0.1rem !important; 
+    height: auto;
+    width: auto;
+  } 
+
+  .prof_title, .educ_title, .my_works  {
+    width: 100%;
+  }
+
+  .intern_bg, .work_exp, .zuitt_bc, .educ_bg{
+    padding-right: 0.5rem;
+  }
+
+  .intern_bg > ul, .ue_bg {
+    padding-left: 0 !important;
+  }
+}
+
+/* Cards Design Start */
+.works_tab a {
+  background: rgba(0, 0, 0, 0.651);
+  border-top: 1px solid gray;
+  width: 100%;
+  padding-bottom: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.list-item div {
+  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+.list-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.list-item h5 {
+  font-family: 'Bebas Neue';
+  letter-spacing: 2px;
+  font-size: 20;
+}
+
+.list-item h3 {
+  color: rgb(143, 141, 141);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.list-item:hover h3 {
+  color: white; 
+  animation: loadingText1 2.5s linear infinite;
+}
+
+/* Animation Hover Start */
+@keyframes loadingText1 {
+  0%, 100% {
+    color: white;
+    text-shadow: 0 0 10px rgb(255, 0, 0);
+  }
+  50% {
+    color: white;
+    text-shadow: none;
+  }
+}
+/* Animation Hover End */
+
+.list-item:hover h5 {
+  color: rgb(143, 141, 141); 
+  /* animation: loadingText2 2.5s linear infinite; */
+}
+
+.list-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid gray;
+}
+
+.list-item img {
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  max-width: 100%;
+  background: transparent;
+}
+
+.list-item:hover img {
+  opacity: 0.7; /* Reduce opacity on hover */
+}
+
+.list-item:hover::before {
+  border-top-color: white; 
+  animation: loading 2.5s linear infinite;
+}
+
+/* Animation Hover Start */
+@keyframes loading {
+  0% {
+    border-top-color: rgb(255, 255, 255);
+  }
+  50% {
+    border-top-color: transparent;
+  }
+  100% {
+    border-top-color: rgb(255, 255, 255);
+  }
+}
+/* Animation Hover End */
+/* Cards Design End */
+
+/* Modal Design Start */
+.close {
+  background-color: transparent;
+  border-color: rgba(255, 252, 252, 0.164);
+  width: 25px;
+}
+
+.close span {
+  color: white;
+}
+
+.modal.fade.show {
+  background: rgba(0, 0, 0, 0.945);
+}
+
+.modal-body > .work01, .work02, .sample01, .sample02, .sample03, .sample04 {
+  border: 3px solid black;
+}
+
+.modal-body > .work01, .work02, .sample01, .sample02, .sample03, .sample04 {
+  width: 100%;
+}
+
+.modal-body p {
+  text-align: justify;
+  font-family: 'Roboto';
+  letter-spacing: 0.5px;
+}
+
+.link_pro {
+  color: rgb(253, 253, 253);
+  text-decoration: none;
+  background: rgba(121, 69, 69, 0.274);
+  padding: 0.5rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.link_pro:hover {
+  text-decoration: none;
+  color: black;
+  background: white;
+}
+
+.custom-modal .modal-content {
+  background-color: #494949cc; 
+  color: #ffffff; 
+  overflow: hidden;
+}
+
+.modal-content h5 {
+  font-family: 'Bebas Neue';
+  letter-spacing: 4px;
+  font-size: 1.5rem;
+}
+
+.modal-content h3 {
+  font-family: 'Kanit';
+  letter-spacing: 2px;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+/* Modal Design End */
+/* Projects / Experience Design End */
+/* END: Projects / Exp End */
