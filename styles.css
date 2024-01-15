@@ -989,7 +989,7 @@ li:last-child > a {
 }
 
 /* Cards Design Start */
-.works_tab a {
+.works_tab > div > a {
   background: rgba(0, 0, 0, 0.651);
   border-top: 1px solid gray;
   width: 100%;
@@ -998,7 +998,29 @@ li:last-child > a {
   color: white;
 }
 
-.list-item div {
+/* Responsiveness: Card Start */
+@media screen and (max-width:991px) {
+  .works_col1, .works_col2  {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+}
+/* Responsiveness: Card End */
+
+/* Responsiveness: Card Start */
+@media screen and (max-width:425px) {
+  .works_col1, .works_col2  {
+    padding-right: 0.2rem !important;
+    padding-left: 0.2rem !important;
+  }
+
+  .works_col1 div, .works_col2 div {
+    padding-left: 1rem !important;
+  }
+}
+/* Responsiveness: Card End */
+
+.list-item > div {
   padding-right: 1rem;
   padding-left: 2rem;
   padding-top: 2rem;
@@ -1015,16 +1037,25 @@ li:last-child > a {
   font-size: 20;
 }
 
-.list-item h3 {
+.list-item h4 {
   color: rgb(143, 141, 141);
   font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
   letter-spacing: 2px;
 }
 
-.list-item:hover h3 {
+@media screen and (max-width:425px) {
+  .list-item h4 {
+    font-size: 16.5px;
+  }
+
+  .list-item h5 {
+    font-size: 16px;
+  }
+}
+
+.list-item:hover h4 {
   color: white; 
-  animation: loadingText1 2.5s linear infinite;
+  animation: loadingText1 1.5s linear infinite;
 }
 
 /* Animation Hover Start */
@@ -1042,7 +1073,6 @@ li:last-child > a {
 
 .list-item:hover h5 {
   color: rgb(143, 141, 141); 
-  /* animation: loadingText2 2.5s linear infinite; */
 }
 
 .list-item::before {
@@ -1068,7 +1098,7 @@ li:last-child > a {
 
 .list-item:hover::before {
   border-top-color: white; 
-  animation: loading 2.5s linear infinite;
+  animation: loading 1.5s linear infinite;
 }
 
 /* Animation Hover Start */
@@ -1084,6 +1114,7 @@ li:last-child > a {
   }
 }
 /* Animation Hover End */
+
 /* Cards Design End */
 
 /* Modal Design Start */
@@ -1099,6 +1130,7 @@ li:last-child > a {
 
 .modal.fade.show {
   background: rgba(0, 0, 0, 0.945);
+  /* overflow: scroll; */
 }
 
 .modal-body > .work01, .work02, .sample01, .sample02, .sample03, .sample04 {
