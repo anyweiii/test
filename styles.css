@@ -961,30 +961,13 @@ li:last-child > a {
 }
 
 @media screen and (max-width:425px) {
-  #projects span  {
-    letter-spacing: 0px;
-  }
-
-  .work_bg h1, .intern_exp h1, .zuitt_bc h1, .ue_bg h1  {
-    font-size: 20px;
-  }
-
-  .zuitt_bc span, .ue_bg span .intern_exp span, .ue_bg span {
-    padding-left: 0.1rem !important; 
-    height: auto;
-    width: auto;
-  } 
-
-  .prof_title, .educ_title, .my_works  {
+  .work_bg, .intern_bg, .bc_exp, .educ_bg {
     width: 100%;
   }
 
-  .intern_bg, .work_exp, .zuitt_bc, .educ_bg{
-    padding-right: 0.5rem;
-  }
-
-  .intern_bg > ul, .ue_bg {
-    padding-left: 0 !important;
+  #projects {
+    background-size: cover;
+    background-attachment: fixed;
   }
 }
 
